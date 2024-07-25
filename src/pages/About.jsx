@@ -1,11 +1,12 @@
 import aboutHero from "../assets/images/about-hero.png";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
     <>
-      <main className="about-container">
-        <img src={aboutHero} />
-        <div className="main-text">
+      <img src={aboutHero} />
+      <main>
+        <div className="about-container">
           <h1>Don’t squeeze in a sedan when you could relax in a van.</h1>
           <p>
             Our mission is to enliven your road trip with the perfect travel van
@@ -19,7 +20,9 @@ function About() {
         </div>
         <div className="call-to-action">
           <h2>Your destination is waiting. Your van is ready.</h2>
-          <button>Explore our vans</button>
+          <Link to="/vans" className="about-cta">
+            Explore our vans
+          </Link>
         </div>
       </main>
     </>

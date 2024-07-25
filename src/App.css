@@ -4,7 +4,9 @@
 }
 
 html,
-body {
+body,
+h1,
+h2 {
   margin: 0;
   padding: 0;
 }
@@ -23,6 +25,10 @@ body {
 h1 {
   font-size: 36px;
   font-weight: 800;
+}
+
+h2 {
+  margin-bottom: 2rem;
 }
 
 /* Site Logo */
@@ -49,23 +55,12 @@ img {
   width: 100%;
 }
 
-/* Buttons */
-button {
-  background-color: transparent;
-  color: inherit;
-  border: none;
-  border-radius: 5px;
-  font-weight: 600;
-  padding: 1em 2em;
-}
-
 /* Home Container */
 .home-container {
   background-image: url(./assets/images/home-hero.png);
   background-size: cover;
   color: #fff;
   height: 77vh;
-  padding: 1rem 2rem 2rem;
 }
 
 .home-container p {
@@ -73,25 +68,36 @@ button {
   margin-bottom: 2rem;
 }
 
-.home-container button {
-  background-color: #ff8c38;
-  color: #fff;
-  width: 100%;
+main {
+  padding: 2rem;
 }
 
-/* Main Text */
-.main-text {
-  padding: 1em 2em 2em;
+.about-container {
+  margin-bottom: 2rem;
 }
 
 /* Call to Action */
 .call-to-action {
   background-color: #ffcc8d;
-  padding: 0.5rem 2rem 2rem;
-  margin: 0 2rem 2rem;
+  padding: 2rem;
 }
 
-.call-to-action button {
+.home-cta,
+.about-cta {
+  display: inline-block;
+  padding: 1em 2em;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.home-cta {
+  display: block;
+  background-color: #ff8c38;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+}
+
+.about-cta {
   background-color: #161616;
   color: #fff;
 }
