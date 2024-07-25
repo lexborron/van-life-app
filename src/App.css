@@ -1,0 +1,107 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body Scrollbar Styles */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Typography */
+h1 {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+/* Site Logo */
+.site-logo {
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-right: auto;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 110px;
+  padding: 2em;
+}
+
+/* Images */
+img {
+  display: block;
+  width: 100%;
+}
+
+/* Buttons */
+button {
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 1em 2em;
+}
+
+/* Home Container */
+.home-container {
+  background-image: url(./assets/images/home-hero.png);
+  background-size: cover;
+  color: #fff;
+  height: 77vh;
+  padding: 1rem 2rem 2rem;
+}
+
+.home-container p {
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.home-container button {
+  background-color: #ff8c38;
+  color: #fff;
+  width: 100%;
+}
+
+/* Main Text */
+.main-text {
+  padding: 1em 2em 2em;
+}
+
+/* Call to Action */
+.call-to-action {
+  background-color: #ffcc8d;
+  padding: 0.5rem 2rem 2rem;
+  margin: 0 2rem 2rem;
+}
+
+.call-to-action button {
+  background-color: #161616;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background-color: #252525;
+  color: #aaa;
+  font-size: 14px;
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+}
