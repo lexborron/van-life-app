@@ -18,7 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
       </Routes>
-      <footer>Ⓒ 2022 #VANLIFE</footer>
+      <footer>Ⓒ 2024 #VANLIFE</footer>
     </BrowserRouter>
   );
 }
