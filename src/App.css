@@ -23,11 +23,14 @@ body {
 
 /* Typography */
 h1 {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 800;
+  line-height: 42px; /* 116.667% */
 }
 
 h2 {
+  font-weight: 700;
+  line-height: 30px;
   margin-bottom: 2rem;
 }
 
@@ -45,8 +48,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 110px;
-  padding: 2em;
+  height: 13vh;
+  padding-inline: 26px;
 }
 
 /* Images */
@@ -57,28 +60,36 @@ img {
 
 /* Home Container */
 .home-container {
-  background-image: url(./assets/images/home-hero.png);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
+    url("./assets/images/home-hero.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   color: #fff;
+  height: calc(100vh - 25vh);
+
+  & h1 {
+    font-size: 36px;
+  }
+
+  & main {
+    padding: 65px 26px;
+  }
 }
 
-.home-container p {
-  font-weight: 500;
-  margin-bottom: 2rem;
-}
-
-main {
-  padding: 2rem;
-}
-
+/* About Container */
 .about-container {
-  margin-bottom: 2rem;
+  & main {
+    padding: 48px 26px;
+  }
 }
 
 /* Call to Action */
 .call-to-action {
   background-color: #ffcc8d;
   padding: 2rem;
+  margin-top: 3rem;
 }
 
 .home-cta,
@@ -90,6 +101,7 @@ main {
 }
 .home-cta {
   display: block;
+  margin-top: 3rem;
   background-color: #ff8c38;
   text-align: center;
   color: #fff;
@@ -103,10 +115,12 @@ main {
 
 /* Footer */
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #252525;
   color: #aaa;
   font-size: 14px;
-  text-align: center;
-  padding: 2rem;
   width: 100%;
+  height: 12vh;
 }
