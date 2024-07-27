@@ -12,15 +12,32 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* General Styles */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body Scrollbar Styles */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 a {
   text-decoration: none;
   font-family: inherit;
   font-weight: 600;
   color: #4d4d4d;
-  padding-bottom: 0.1em;
-}
-
-nav > a:hover {
-  border-bottom: 2px solid #161616;
-  color: #161616;
 }
