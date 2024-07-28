@@ -19,7 +19,7 @@ function About() {
 
         <div className="call-to-action">
           <h2>Your destination is waiting. Your van is ready.</h2>
-          <Link to="/vans" className="about-cta">
+          <Link to="/vans" className="btn about-cta">
             Explore our vans
           </Link>
         </div>
