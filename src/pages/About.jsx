@@ -18,7 +18,9 @@ function About() {
         </p>
 
         <div className="call-to-action">
-          <h2>Your destination is waiting. Your van is ready.</h2>
+          <h2 className="margin-bottom">
+            Your destination is waiting. Your van is ready.
+          </h2>
           <Link to="/vans" className="btn about-cta">
             Explore our vans
           </Link>

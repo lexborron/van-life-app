@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 
 function VanDetails() {
   const params = useParams();
-  const [van, setVan] = useState([]); // for storing api data
+  const [van, setVan] = useState(null); // for storing api data
 
   useEffect(() => {
     fetch(`/api/vans/${params.id}`)
@@ -12,7 +12,7 @@ function VanDetails() {
   }, [params.id]);
 
   return (
-    <div key={van.id} className="van-details-container">
+    <div className="van-details-container">
       {van ? (
         <div>
           <img className="van-img" src={van.imageUrl} />

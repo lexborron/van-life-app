@@ -8,7 +8,6 @@ h1 {
 h2 {
   font-weight: 700;
   line-height: 30px;
-  margin-bottom: 2rem;
 }
 
 /* Site Logo */
@@ -99,13 +98,12 @@ img {
 /* Vans */
 .van-list-container,
 .van-details-container {
-  padding: 3rem 26px;
+  padding: 0 26px 3rem;
 }
 
 .van-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 24px;
   margin-top: 57px;
 }
@@ -117,8 +115,10 @@ img {
 
 .van-info {
   display: flex;
+  justify-content: space-between;
   gap: 1rem;
   font-size: 20px;
+  margin-block: 1rem;
 }
 
 .van-info span {
@@ -176,6 +176,15 @@ img {
   margin: 2.5rem 0 1rem;
 }
 
+.van-list-container h3,
+.van-list-container p {
+  margin: 0;
+}
+
+.van-list-container h3 {
+  line-height: 1.2;
+}
+
 /* Footer */
 footer {
   display: flex;
@@ -201,4 +210,8 @@ footer {
   text-align: center;
   color: #fff;
   width: 100%;
+}
+
+.margin-bottom {
+  margin-bottom: 2rem;
 }
